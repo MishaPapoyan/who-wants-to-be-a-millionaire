@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(32, 50, 97);
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.call {
+    width: 144px;
+    height: 85px;
+    border-radius: 60px;
+    background-color: rgb(38, 60, 132);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.call img {
+    width: 50px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.fifty_fifty {
+    width: 144px;
+    height: 85px;
+    border-radius: 60px;
+    background-color: rgb(38, 60, 132);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.hall {
+    width: 144px;
+    height: 85px;
+    border-radius: 60px;
+    background-color: rgb(38, 60, 132);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.hall img {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+
+
+.price-text {
+    width: 144px;
+    height: 85px;
+    border-radius: 60px;
+    background-color: rgb(38, 60, 132);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin-bottom: 15px;
+    color: aliceblue;
+
+}
+
+.menu-price {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.price {
+    width: 144px;
+    height: 85px;
+    border-radius: 60px;
+    background-color: rgb(38, 60, 132);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.play{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image{
+    margin: auto;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+
+}
+.game{
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(38, 60, 132);
+    border-radius: 40px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-style: solid;
+}
+#h1{
+    color: aliceblue;
+}
+.rules{
+    color: aliceblue;
+}
+
+.rules > h1{
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(38, 60, 132);
+    border-radius: 40px;
+    border-style: solid;
+    text-align: center;
+
+}
+#h2{
+    color: aliceblue;
+}
+.quit-game{
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(38, 60, 132);
+    border-radius: 40px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+
+}
+#h3{
+    color: aliceblue;
+}
+
+.money-tree  span{
+    color: gold;
+    padding-right: 22px;
+}
+.money-tree  .white{
+    color: white;
+}
+.money-tree, .help{
+    margin: 40px 40px 0 0;
+}
+.questions{
+    margin-top: 10%;
+    width: 60%;
+}
+
+.questions span{
+    color: gold;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-right:  15px;
+}
+.questions > .answers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.questions >.answers > div{
+    width: 408px;
+    text-align: center;
+
+}
+
+.answers div{
+    margin-bottom: 25px;
+    width: 48%;
+}
+.questions h2{
+    text-transform: capitalize;
+    color: teal;
+    padding: 15px;
+    text-align: center;
+}
+
+
+button{
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+
+button:hover{
+    background: beige;
+}
+
+.money{
+    color:  teal
+}
+
