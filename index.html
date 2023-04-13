@@ -1,153 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.css">
-	<title>Ove Uzum Darnal Milyonater</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ove Uzum Darnal Milyonater</title>
 
 <body>
 
 
-	<div class="main" >
-		<div class="image">
-			<img src="./images/nkar2.webp">
-		</div>
-		<div class="game">
-			<a href="#">
-				<h1 id="h1">New Game</h1>
-			</a>
-		</div>
+<div id="play">
+    <div class="show-hall" id="showHall">
+        <p><div></div></p>
+        <p><div></div></p>
+        <p><div></div></p>
+        <p><div></div></p>
+    </div>
+    <div id="questions">
+        <div class="money">
+            <div class="cureent-money">
+                <span id="spanForCM"></span>
+            </div>
+            <div class="cureent-untach-monay">
+                <span id='spanForCUM'></span>
+            </div>
+        </div>
+            <div  class="helps" >
+                <p id="takeMoney" class="take_money"><i class="fa-solid fa-dollar-sign"></i></p>
+                <p id = "fifty-fifty" class="fifty__fifty"><i>50/50</i></p>
+                <p> <i  id="call" class="fa-solid fa-phone-flip"></i> </p>
+                <p  id="hall" class="help___hall"><i class="fa-solid fa-users-line"></i> </p>
+                <p style="display: none" id="changeQuestion" class="help___hall"><i>change</i> </p>
+            </div>
+        <div class="money untouchable-amount"></div>
+        <h2 id="q">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <div class="answers">
+            <div class="answer1"><span> a </span> <button id="A">Lorem ipsum dolor sit</button></div>
+            <div class="answer2"><span> b </span> <button id="B">Lorem ipsum dolor sit</button></div>
+            <div class="answer3"><span> c </span> <button id="C">Lorem ipsum dolor sit</button></div>
+            <div class="answer4"><span> d </span> <button id="D">Lorem ipsum dolor sit</button></div>
+        </div>
+    </div>
 
-	</div>
+    <div class="finish-game" id="finish" style="display:none;">
+        <h1 class="player-info"></h1>
+        <p class="money-info"></p>
+        <button onclick="location.reload()">New Game</button>
+    </div>
 
-	<div class="play" style="display: none">
-		<div class="help">
-			<div class="call">
-				<img src="./images/heraxos.png">
-			</div>
-			<div class="fifty_fifty">
-				<h2>50/50</h2>
-			</div>
-			<div class="hall">
-				<img src="./images/images.png">
-			</div>
-			<div class="hall take-money">
-				<h2 style="font-size: 15px; margin-top: 20px">Take Money</h2>
-			</div>
-		</div>
-		<div class="questions">
-			<div class="money"></div>
-			<div class="money untouchable-amount"></div>
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-			<div class="answers">
-				<div class="answer1"><span>a</span> <button id="first">Lorem ipsum dolor sit</button></div>
-				<div class="answer2"><span>b</span> <button id="two">Lorem ipsum dolor sit</button></div>
-				<div class="answer3"><span>c</span> <button id="thirth">Lorem ipsum dolor sit</button></div>
-				<div class="answer4"><span>d</span> <button id="forth">Lorem ipsum dolor sit</button></div>
-			</div>
-		</div>
-		<div class="hallProcent" style="display: none">
-			<p>24.5%</p>
-			<p>22.5%</p>
-			<p>22.5%</p>
-			<p>22.5%</p>
-		</div>
-		<div class="money-tree">
-			<h3 class="white"><span>15</span> 1.000.000</h3>
-			<h3><span>14</span> 500.000</h3>
-			<h3><span>13</span> 250.000</h3>
-			<h3><span>12</span> 125.000</h3>
-			<h3><span>11</span> 64.000</h3>
-			<h3 class="white"><span>10</span> 32.000</h3>
-			<h3><span>9 </span>16.000</h3>
-			<h3><span>8 </span>8.000</h3>
-			<h3><span>7 </span>4.000</h3>
-			<h3><span>6 </span>2.000</h3>
-			<h3 class="white"><span>5 </span>1.000</h3>
-			<h3><span>4 </span>500</h3>
-			<h3><span>3 </span>300</h3>
-			<h3><span>2 </span>200</h3>
-			<h3><span>1 </span>100</h3>
-		</div>
-	</div>
+    <div class="money-tree">
+        <h3 class="white"><span>15</span> 1.000.000</h3>
+        <h3><span>14</span> 500.000</h3>
+        <h3><span>13</span> 250.000</h3>
+        <h3><span>12</span> 125.000</h3>
+        <h3><span>11</span> 64.000</h3>
+        <h3 class="white"><span>10</span> 32.000</h3>
+        <h3><span>9 </span>16.000</h3>
+        <h3><span>8 </span>8.000</h3>
+        <h3><span>7 </span>4.000</h3>
+        <h3><span>6 </span>2.000</h3>
+        <h3 class="white"><span>5 </span>1.000</h3>
+        <h3><span>4 </span>500</h3>
+        <h3><span>3 </span>300</h3>
+        <h3><span>2 </span>200</h3>
+        <h3><span>1 </span>100</h3>
+    </div>
+</div>
 
-	<div class="rules">
-		<h1>Rules</h1>
-		<div class="show" style="display:none;">
-			<h1><b>Ո՞վ է ուզում դառնալ միլիոնատեր Խաղի կանոնները</b></h1>
-			<hr>
-			<p>Խաղն ունի 15 հարց։ Ամեն մի հարց ունի 4 տարբերակ, որից միայն մեկն է ճիշտ, մասնակիցը պարտավոր է ընտրել 4 տարբերակից միայն 1 ճիշտ տարբերակը, որը նրան կբերի գումար։ </p>
-			<hr>
-			<div class="discription">
-				<p>Խաղը բաղկացած է 5 փուլից, որից ամեն մի փուլը բաղկացած է 5 հարցից։ Առաջին փուլում մասնակիցը ունենում է 3 օգնության հնարավորություն. </p>
-				<ul>
-					<li> <b>Դահլիճի օգնություն</b> - Երբ որ մասնակիցը դժվարանում է հարցին պատասխանել նա օգտվում է դահլիճի օգնությունից։ Դահլիճում գտնվող բոլոր անձինք իրենց հնարավորությունների սահմաններում տարբերակներից մեկին փորձում են պատասխանել ճիշտ։ Բոլոր անձանց տրվում են վահանակներ, որոնց շնորհիվ էլ կարողանում են ընտրել ճիշտ պատասխանը։</li>
-					<li><b>50:50 </b>- համակարգիչը ջնջում է 4 տարբերակներից 2 սխալ տարբերակները, իսկ այդ 2 տարբերակներից 1-ը մասնակիցը պարտավոր է ընտրել 1 ճիշտ պատասխանը։</li>
-					<li><b>Զանգ ընկերոջը</b>- Մասնակցին տրվում է 30 վայրկյան, որի ընթացքում մասնակիցը պետք է ընթերցի հարցը իր զանգընկերոջը, իսկ 30 վայրկյանից հետո զանգն ընթատվում է։</li>
-				</ul>
-			</div>
-			<div class="questions">
-				<h1><b>Հարցեր</b></h1>
-				<h4>Հարցերը տրվում են 3 բարդություններով. </h4>
-				<ul>
-					<li>1-ին հարցից մինչև 5-րդ հարցը, հարցերը տրվում են 1 բարդության։ Հաճախ այնպիսի հարցեր են տրվում, որ հեռուստադիտողին զվարճանք է պարգևում։</li>
-					<li>5-րդ հարցից մինչև 10-րդ հարցը, հարցերը տրվում են 2 բարդության։</li>
-					<li>10-րդ հարցից մինչև 15-րդ հարցը, հարցերը տրվում են 3 բարդության։</li>
-				</ul>
-				<div class="example">
-					<h4><b>Հարցերի օրինակներ </b>(Ճիշտ պատասխանները ներկայացված են թավատառով). </h4>
-					<h6>1-ին բարդության հարցեր. </h6>
-					<ul>
-						<li>Ձմեռ պապը բերում է...... (Ա. խաղաղաություն, Բ. <b>խաղալիքներ</b>, Գ. խաղաթղթեր, Դ. խմիչքներ)</li>
-						<li>Հարևանուհին կարող է լինել.... (Ա. «Որոգայթից», Բ. բանակից, Գ.<b>դռկից</b> Դ. վրանից)</li>
-						<li>«Որոգայթում» ինչի՞ համար են գործող անձինք պատրաստ զոհաբերությունների (Ա. սև արկղը, Բ. Ատլանտիդան, Գ. <b>նոութբուքը</b>, Դ. Ամանորյա սուջուխ)</li>
-						<li>Ժողովրդական խոսք. «Անցավ գլուխդ մի` դիր (ինչի՞) տակ» (Ա. <b>Ցավի</b>, Բ. տոնածառի Գ. կնոջդ կրունկի Դ. գիլիոտինի)</li>
-						<li>Փամբակի հետ միախառնվելով այն առաջացնում է Դեբեդը (Ա. <b>Ձորագետ</b>, Բ. ամենագետ, Գ. մասնագետ, Դ. ճարտարագետ)</li>
-					</ul>
+<div class="rules" style="display:none;">
+    <h1>Rules</h1>
+    <div class="show">
+        <h1><b>Ո՞վ է ուզում դառնալ միլիոնատեր Խաղի կանոնները</b></h1>
+        <hr>
+        <p>Խաղն ունի 15 հարց։ Ամեն մի հարց ունի 4 տարբերակ, որից միայն մեկն է ճիշտ, մասնակիցը պարտավոր է ընտրել 4 տարբերակից միայն 1 ճիշտ տարբերակը, որը նրան կբերի գումար։ </p>
+        <hr>
+        <div class="discription">
+            <p>Խաղը բաղկացած է 5 փուլից, որից ամեն մի փուլը բաղկացած է 5 հարցից։ Առաջին փուլում մասնակիցը ունենում է 3 օգնության հնարավորություն. </p>
+            <ul>
+                <li> <b>Դահլիճի օգնություն</b> - Երբ որ մասնակիցը դժվարանում է հարցին պատասխանել նա օգտվում է դահլիճի օգնությունից։ Դահլիճում գտնվող բոլոր անձինք իրենց հնարավորությունների սահմաններում տարբերակներից մեկին փորձում են պատասխանել ճիշտ։ Բոլոր անձանց տրվում են վահանակներ, որոնց շնորհիվ էլ կարողանում են ընտրել ճիշտ պատասխանը։</li>
+                <li><b>50:50 </b>- համակարգիչը ջնջում է 4 տարբերակներից 2 սխալ տարբերակները, իսկ այդ 2 տարբերակներից 1-ը մասնակիցը պարտավոր է ընտրել 1 ճիշտ պատասխանը։</li>
+                <li><b>Զանգ ընկերոջը</b>- Մասնակցին տրվում է 30 վայրկյան, որի ընթացքում մասնակիցը պետք է ընթերցի հարցը իր զանգընկերոջը, իսկ 30 վայրկյանից հետո զանգն ընթատվում է։</li>
+            </ul>
+        </div>
+        <div class="questions">
+            <h1><b>Հարցեր</b></h1>
+            <h4>Հարցերը տրվում են 3 բարդություններով. </h4>
+            <ul>
+                <li>1-ին հարցից մինչև 5-րդ հարցը, հարցերը տրվում են 1 բարդության։ Հաճախ այնպիսի հարցեր են տրվում, որ հեռուստադիտողին զվարճանք է պարգևում։</li>
+                <li>5-րդ հարցից մինչև 10-րդ հարցը, հարցերը տրվում են 2 բարդության։</li>
+                <li>10-րդ հարցից մինչև 15-րդ հարցը, հարցերը տրվում են 3 բարդության։</li>
+            </ul>
+            <div class="example">
+                <h4><b>Հարցերի օրինակներ </b>(Ճիշտ պատասխանները ներկայացված են թավատառով). </h4>
+                <h6>1-ին բարդության հարցեր. </h6>
+                <ul>
+                    <li>Ձմեռ պապը բերում է...... (Ա. խաղաղաություն, Բ. <b>խաղալիքներ</b>, Գ. խաղաթղթեր, Դ. խմիչքներ)</li>
+                    <li>Հարևանուհին կարող է լինել.... (Ա. «Որոգայթից», Բ. բանակից, Գ.<b>դռկից</b> Դ. վրանից)</li>
+                    <li>«Որոգայթում» ինչի՞ համար են գործող անձինք պատրաստ զոհաբերությունների (Ա. սև արկղը, Բ. Ատլանտիդան, Գ. <b>նոութբուքը</b>, Դ. Ամանորյա սուջուխ)</li>
+                    <li>Ժողովրդական խոսք. «Անցավ գլուխդ մի` դիր (ինչի՞) տակ» (Ա. <b>Ցավի</b>, Բ. տոնածառի Գ. կնոջդ կրունկի Դ. գիլիոտինի)</li>
+                    <li>Փամբակի հետ միախառնվելով այն առաջացնում է Դեբեդը (Ա. <b>Ձորագետ</b>, Բ. ամենագետ, Գ. մասնագետ, Դ. ճարտարագետ)</li>
+                </ul>
 
-					<h6>2-րդ բարդության հարցեր. </h6>
-					<ul>
-						<li>Ո՞ր բառն է «դուրս մնում» մյուս երեքի ընտանիքից (Ա. ապերասան, Բ. <b>ապերախտ</b>, Գ. անսանձ, Դ. անզուսպ)</li>
-						<li>Այս անուններից որի՞ արմատն է «հպարտ» բառը (Ա. Վախթանգ, Բ. Միրո, Գ. Երեմ, Դ. <b>Գոռ</b>)</li>
-						<li>IFFHS ֆուտբոլի պատմության և ինչի՞ միջազգային ֆեդերացիան է (Ա. նվաճումների, Բ. <b>վիճակագրության</b>, Գ. վիճաբանությունների, Դ. կանոննորի)</li>
-						<li>Այս պարատեսակի անվանմանը հիմքում ընկած է աշխարհագրական տեղանուն (Ա. <b>մազուրկա</b>, Բ. տանգո, Գ. Ուզունդարա, Դ. պոլկա)</li>
-					</ul>
-					<h6>3-րդ բարդության հարցեր. </h6>
-					<ul>
-						<li>Տարբերակներից որի՞ հիմքում ընկած չէ «Վարդ» արմատը (Ա. Ռոդոնիտ, Բ. Ռոզեոլա, Գ. Ռոզարիում, Դ. <b>Ռոզմարին</b>)</li>
-						<li>Ո՞ր տարբերակում «թաքնված չէ» ԱՄՆ նահանգի անվանում (Ա. Ինդիանապոլիս, Բ. <b>Միլուոկի</b>, Գ. Արմենիա, Դ. Սկյուտար)</li>
-					</ul>
-				</div>
-			</div>
-			<div class="money-tree">
-				<h2>Խաղի մրցանակներ</h2>
-				<h3 class="white"><span>15</span> 1.000.000</h3>
-				<h3><span>14</span> 500.000</h3>
-				<h3><span>13</span> 250.000</h3>
-				<h3><span>12</span> 125.000</h3>
-				<h3><span>11</span> 64.000</h3>
-				<h3 class="white"><span>10</span> 32.000</h3>
-				<h3><span>9 </span>16.000</h3>
-				<h3><span>8 </span>8.000</h3>
-				<h3><span>7 </span>4.000</h3>
-				<h3><span>6 </span>2.000</h3>
-				<h3 class="white"><span>5 </span>1.000</h3>
-				<h3><span>4 </span>500</h3>
-				<h3><span>3 </span>300</h3>
-				<h3><span>2 </span>200</h3>
-				<h3><span>1 </span>100</h3>
-			</div>
+                <h6>2-րդ բարդության հարցեր. </h6>
+                <ul>
+                    <li>Ո՞ր բառն է «դուրս մնում» մյուս երեքի ընտանիքից (Ա. ապերասան, Բ. <b>ապերախտ</b>, Գ. անսանձ, Դ. անզուսպ)</li>
+                    <li>Այս անուններից որի՞ արմատն է «հպարտ» բառը (Ա. Վախթանգ, Բ. Միրո, Գ. Երեմ, Դ. <b>Գոռ</b>)</li>
+                    <li>IFFHS ֆուտբոլի պատմության և ինչի՞ միջազգային ֆեդերացիան է (Ա. նվաճումների, Բ. <b>վիճակագրության</b>, Գ. վիճաբանությունների, Դ. կանոննորի)</li>
+                    <li>Այս պարատեսակի անվանմանը հիմքում ընկած է աշխարհագրական տեղանուն (Ա. <b>մազուրկա</b>, Բ. տանգո, Գ. Ուզունդարա, Դ. պոլկա)</li>
+                </ul>
+                <h6>3-րդ բարդության հարցեր. </h6>
+                <ul>
+                    <li>Տարբերակներից որի՞ հիմքում ընկած չէ «Վարդ» արմատը (Ա. Ռոդոնիտ, Բ. Ռոզեոլա, Գ. Ռոզարիում, Դ. <b>Ռոզմարին</b>)</li>
+                    <li>Ո՞ր տարբերակում «թաքնված չէ» ԱՄՆ նահանգի անվանում (Ա. Ինդիանապոլիս, Բ. <b>Միլուոկի</b>, Գ. Արմենիա, Դ. Սկյուտար)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="money-tree">
+            <h2>Խաղի մրցանակներ</h2>
+            <h3 class="white"><span>15</span> 1.000.000</h3>
+            <h3><span>14</span> 500.000</h3>
+            <h3><span>13</span> 250.000</h3>
+            <h3><span>12</span> 125.000</h3>
+            <h3><span>11</span> 64.000</h3>
+            <h3 class="white"><span>10</span> 32.000</h3>
+            <h3><span>9 </span>16.000</h3>
+            <h3><span>8 </span>8.000</h3>
+            <h3><span>7 </span>4.000</h3>
+            <h3><span>6 </span>2.000</h3>
+            <h3 class="white"><span>5 </span>1.000</h3>
+            <h3><span>4 </span>500</h3>
+            <h3><span>3 </span>300</h3>
+            <h3><span>2 </span>200</h3>
+            <h3><span>1 </span>100</h3>
+        </div>
 
-		</div>
+    </div>
 
-	</div>
+</div>
 
 
-	<script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

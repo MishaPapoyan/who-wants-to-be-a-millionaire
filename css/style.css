@@ -4,66 +4,66 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+p > i{
+    color: red;
+}
+.show-hall p{
+    width:  350px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
 
+.money{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:  50px;
+}
+.finish-game{
+    margin-top: 20%     ;
+}
+
+.finish-game > h1 ,.finish-game >  p{
+    border: 2px solid white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
 body {
     background-color: rgb(32, 50, 97);
 }
 
-.help {
+
+.helps{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
-
-.call {
-    width: 144px;
-    height: 85px;
-    border-radius: 60px;
-    background-color: rgb(38, 60, 132);
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    margin-bottom: 15px;
-    color: aliceblue;
+.helps > p{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    border: 2px solid lightblue;
+    border-radius: 25px;
+    padding: 20px;
 }
+.helps > p:hover{
+    border-bottom: 2px dashed  red ;
+    border-top: 2px dashed  red ;
+    transition: 1s;
 
-.call img {
+}
+.helps > p > i:hover{
+    transform: rotate(360deg );
+    transition: 1.5s;
+}
+.helps img{
+    height: 50px;
     width: 50px;
-    margin: auto;
-    border-radius: 50px;
+    cursor: pointer;
 }
-
-.fifty_fifty {
-    width: 144px;
-    height: 85px;
-    border-radius: 60px;
-    background-color: rgb(38, 60, 132);
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    color: aliceblue;
-    margin-bottom: 15px;
-}
-
-.hall {
-    width: 144px;
-    height: 85px;
-    border-radius: 60px;
-    background-color: rgb(38, 60, 132);
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    margin-bottom: 15px;
-    color: aliceblue;
-}
-
-.hall img {
-    width: 55px;
-    height: 55px;
-    margin: auto;
-    border-radius: 50px;
-}
-
 
 
 .price-text {
@@ -103,7 +103,7 @@ body {
     flex-direction: column;
     margin: auto;
 }
-.play{
+#play{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -176,25 +176,27 @@ body {
 .money-tree, .help{
     margin: 40px 40px 0 0;
 }
-.questions{
+#questions{
     margin-top: 10%;
-    width: 60%;
+    width: 55%;
+    margin-left: 100px;
+
 }
 
-.questions span{
+#questions span{
     color: gold;
     text-transform: uppercase;
     font-size: 25px;
     margin-right:  15px;
 }
-.questions > .answers{
+#questions > .answers{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
-.questions >.answers > div{
+#questions >.answers > div{
     width: 408px;
     text-align: center;
 
@@ -204,7 +206,7 @@ body {
     margin-bottom: 25px;
     width: 48%;
 }
-.questions h2{
+#questions h2{
     text-transform: capitalize;
     color: teal;
     padding: 15px;
@@ -220,9 +222,5 @@ button{
 
 button:hover{
     background: beige;
-}
-
-.money{
-    color:  teal
 }
 
