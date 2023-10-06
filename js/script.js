@@ -15,21 +15,21 @@ class Game {
 
     play(){
         const ques = [
-            new Question("Որն է Հայաստանի մայրաքաղաքը", new Answer(['Երևան', 'Գյումրի', 'Վանաձոր', 'Գորիս'])),
-            new Question("Որն է Ռուսաստանի մայրաքաղաքը ", new Answer(['Մոսկվա', 'Դոնի-Ռոստով', ' Լենինգռադ', 'Վոռոնեժ'])),
-            new Question("Որն է ԱՄՆ-նի մայրաքաղաքը", new Answer(['Վաշինգթւն', 'Լոս-Անջելես', 'Նյու-Յորկ', 'Գլենդել '])),
-            new Question("Որն է Իսպանիա մայրաքաղաքը", new Answer(['Մադրիդ', 'Բարսելոնա', 'Գրանադա', 'Տեներիֆե'])),
-            new Question("Որն է Ֆրանսիաի մայրաքաղաքը", new Answer(['Փարիզ', 'Լիոն', 'Մարսել', 'Նանտ'])),
-            new Question("Նշվածներից որն է մեքենաի բրենդ", new Answer(['BMW', 'Ikea', 'Iphone', 'HP'])),
-            new Question("Նշվածներից որն է համակարգչի բրենդ", new Answer(['բորոր տարբերակները', 'ASUS', 'DELL', 'SAMSUNG'])),
-            new Question("Նշվածներից որն է հեռախոսի բրենդ", new Answer(['բորոր տարբերակները', 'LG', 'HONOR', 'XIAOMI'])),
-            new Question("Նշվածներից որն է հագուստի բրենդ", new Answer([ 'DEBEMHAMS', 'MCDINALDS ', 'KFC', 'ASTON-MARTIN'])),
-            new Question("Նշվածներից որն է ըմպելիքի բրենդ", new Answer(['COCA-COLA', 'SNICKERS', 'TWIX', 'PUMA'])),
-            new Question("Ծրագրավորման մեջ ինչի համար են օգտագործվում HTML/CSS - ը", new Answer(['Կայքի արտաքին տեսքի համար', 'Դինամիկության համար', 'Սերվերների համար', ' Դոմեյնի համա'])),
-            new Question("Ծրագրավորման մեջ ինչի համար են օգտագործվում PYTHON  - ը", new Answer(['բորոր տարբերակները', 'AI', 'ML', 'Back-end'])),
-            new Question("Ծրագրավորման մեջ ինչի համար են օգտագործվում NODE JS  - ը", new Answer(['BACK-END', 'FRONT-END ', 'ML', 'AI'])),
-            new Question("Ծրագրավորման մեջ ինչի համար են օգտագործվում REACT JS - ը", new Answer(['FRONT-END', 'BACK-END', 'AI', 'SERVER-SIDE'])),
-            new Question("Ծրագրավորման մեջ ինչի համար են օգտագործվում DJANGO - ը", new Answer(['BACK-END', 'FRONT-END', 'ML', 'AI'])),
+            new Question("What is the capital of Armenia?", new Answer(['Yerevan', 'Gyumri', 'Vanadzor', 'Goris'])),
+            new Question("What is the capital of Russia?", new Answer(['Moscow', 'Doni-Rostov', 'Leningrad', 'Voronezh'])),
+            new Question("What is the capital of the United States?", new Answer(['Washington, D.C.', 'Los Angeles', 'New York', 'Glendale'])),
+            new Question("What is the capital of Spain?", new Answer(['Madrid', 'Barcelona', 'Granada', 'Tenerife'])),
+            new Question("What is the capital of France?", new Answer(['Paris', 'Lyon', 'Marseille', 'Nantes'])),
+            new Question("Which one is a brand of a car?", new Answer(['BMW', 'Ikea', 'iPhone', 'HP'])),
+            new Question("Which one is a brand of a computer?", new Answer(['Various models', 'ASUS', 'DELL', 'SAMSUNG'])),
+            new Question("Which one is a brand of a mobile phone?", new Answer(['Various models', 'LG', 'HONOR', 'XIAOMI'])),
+            new Question("Which one is a brand of a fast-food restaurant?", new Answer(['DEBENHAMS', "MCDONALD'S", 'KFC', 'ASTON-MARTIN'])),
+            new Question("Which one is a brand of a soft drink?", new Answer(['COCA-COLA', 'SNICKERS', 'TWIX', 'PUMA'])),
+            new Question("What is HTML/CSS used for in programming?", new Answer(['For the external appearance of the site', 'For dynamic content', 'For server-side', 'For domain hosting'])),
+            new Question("What is Python used for in programming?", new Answer(['Various models', 'AI', 'Machine Learning (ML)', 'Back-end'])),
+            new Question("What is NODE JS used for in programming?", new Answer(['Back-end', 'Front-end', 'ML', 'AI'])),
+            new Question("What is REACT JS used for in programming?", new Answer(['Front-end', 'Back-end', 'AI', 'Server-Side'])),
+            new Question("What is DJANGO used for in programming?", new Answer(['Back-end', 'Front-end', 'ML', 'AI']))
         ]
         this.askQuestion(ques,this.currentIndex)
         this.showQuestion(ques,this.currentIndex)
@@ -37,9 +37,6 @@ class Game {
 
 
     }
-        // this.takeMoney(ques,this.currentIndex)
-        // this.call(ques,this.currentIndex)
-        // this.hall(ques,this.currentIndex)
     showQuestion(ques,indexNum){
         let variants = document.querySelectorAll(".answers  button")
         const head = document.getElementById('q')
@@ -103,8 +100,11 @@ class Game {
         unTachMonay.innerText = `Your unTachMonay = ${this.unTachMonay}`
     }
     askQuestion(ques,currentIndex){
-        let variants = document.querySelectorAll(".answers > div > button")
+        // let variants = document.querySelectorAll(".answers  div  button")
+        // console.log(variants)
+        let variants = document.querySelectorAll(".answers button");
         let h3s = document.querySelectorAll("h3")
+
         let val = 14
         let fifty_fifty = document.getElementById('fifty-fifty')
         const takeMoney = document.getElementById('takeMoney')
@@ -273,40 +273,36 @@ class Game {
         const head = document.getElementById('q')
         let variants = document.querySelectorAll(".answers  button")
         let wrongVariants = [variants[1],variants[2], variants[3],]
-        let changedQuestion = new Question("Որն մայրցամաքի վրա է գտնվում Հայաստան-ը ", new Answer(['եվրասիա', 'հարավաիին ամերիկա ', 'հարավաիին ամերիկա', 'աֆրիկա']))
+        let changedQuestion = new Question("Որն մայրցամաքի վրա է գտնվում Հայաստան-ը ", new Answer(['եվրասիա', 'հարավաիին ամերիկա ', 'հյուսիսաին ամերիկա', 'աֆրիկա']))
         head.innerHTML = changedQuestion.question
         variants[0].innerHTML = changedQuestion.answer.options[0]
         variants[1].innerHTML = changedQuestion.answer.options[1]
         variants[2].innerHTML = changedQuestion.answer.options[2]
         variants[3].innerHTML = changedQuestion.answer.options[3]
-        // variants.map((item)=>{
-            variants[0].addEventListener('click', ()=>{
-                debugger
-                    setTimeout(()=> {
-                        variants[0].style.background = 'green'
-                        setTimeout(() => {
-                            variants[0].style.background = ''
-                        }, 1500)
-                    },1500)
-                    setTimeout(()=>{
-                        if (currentIndex < 14){
-                            this.showRes(currentIndex)
-                            this.showQuestion(ques, currentIndex)
-                        }
-                    },3000)
-            })
-        wrongVariants.map((item)=>{
-            item.addEventListener('click',()=>{
+
+        variants[0].addEventListener('click', () => {
+            setTimeout(() => {
+                variants[0].style.background = 'green';
                 setTimeout(() => {
-                    item.style.background = 'red'
-                },1500)
-            })
+                    variants[0].style.background = '';
+                }, 1500);
+            }, 1500);
+            setTimeout(() => {
+                if (currentIndex < 14) {
+                    this.showRes(currentIndex);
+                    this.showQuestion(ques, currentIndex);
+                }
+            }, 3000);
+        });
 
-        })
-        // })
-
+        wrongVariants.map((item) => {
+            item.addEventListener('click', () => {
+                setTimeout(() => {
+                    item.style.background = 'red';
+                }, 1500);
+            });
+        });
     }
-
 
 
     finish(currentIndex){
